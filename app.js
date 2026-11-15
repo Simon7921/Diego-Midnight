@@ -429,7 +429,7 @@
     var rs = C.rulesStatus(rules); $("rulesCount").textContent = "Opcional · " + rs.done + " de " + rs.total + " anotadas";
     var d = C.PAUTA_DEFAULT; $("paramsTxt").textContent = (P.t === d.t && P.f === d.f && P.r === d.r ? "Pauta de la epicrisis" : "Modificados") + " · protegidos";
   }
-  $("themeSeg").addEventListener("click", function (e) { var b = e.target.closest("[data-v]"); if (!b) return; S.set(S.KEYS.theme, b.dataset.v); applyTheme(); renderPerfil(); toast(b.dataset.v === "light" ? "Modo claro activado ☀️" : "Modo Pastel 3D activado ⚽"); });
+  $("themeSeg").addEventListener("click", function (e) { var b = e.target.closest("[data-v]"); if (!b) return; S.set(S.KEYS.theme, b.dataset.v); applyTheme(); renderPerfil(); toast(b.dataset.v === "light" ? "Modo claro activado ☀️" : "Modo Midnight activado ⚡"); });
   $("qtySeg").addEventListener("click", function (e) { var b = e.target.closest("[data-v]"); if (!b) return; prefs.qty = b.dataset.v; S.savePrefs(prefs); renderPerfil(); toast(b.dataset.v === "g" ? "Listo, te propondremos gramos" : "Listo, te propondremos unidades cuando existan"); });
   $("mngFoods").addEventListener("click", function () {
     openSheet('<h3 id="shT">Mis alimentos</h3><ul class="list">' + (custom.length ? custom.map(function (f, i) { return '<li class="li"><div class="main"><span class="nm">' + esc(f.name) + '</span><span class="mt">' + metaTxt(f) + " · " + esc(srcTxt(f)) + '</span></div><button class="ibtn" data-me="' + i + '" aria-label="Editar ' + esc(f.name) + '">' + ico("pencil", "s") + "</button></li>"; }).join("") : '<li class="empty"><p>Todavía no creas alimentos. ¡Cuando quieras!</p></li>') + '</ul><button class="btn btn-primary" id="mNew" style="margin-top:12px">' + ico("plus", "s") + "Nuevo alimento</button>", function (b) {
@@ -573,7 +573,7 @@
   function applyTheme() {
     var t = S.get(S.KEYS.theme, null) || "dark";
     document.documentElement.setAttribute("data-mode", t === "light" ? "light" : "dark");
-    var m = document.querySelector('meta[name="theme-color"]'); if (m) m.content = t === "light" ? "#F3F5F9" : "#FFF4E8";
+    var m = document.querySelector('meta[name="theme-color"]'); if (m) m.content = t === "light" ? "#F3F5F9" : "#0B1020";
   }
 
   applyTheme(); applyFig();

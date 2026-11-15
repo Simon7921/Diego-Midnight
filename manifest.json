@@ -1,25 +1,2 @@
-{
-  "name": "Diego Pastel Pastel 3D · Pruebas",
-  "short_name": "Diego Pastel",
-  "start_url": "./",
-  "scope": "./",
-  "display": "standalone",
-  "background_color": "#FFF4E8",
-  "theme_color": "#FFF4E8",
-  "lang": "es",
-  "icons": [
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "id": "./diego-soft-pastel-3d-test",
-  "description": "Versión de pruebas del diseño Soft Pastel 3D para Pauta Diabetes Diego."
-}
+{"name":"diego. · Pauta","short_name":"diego.","start_url":"./","scope":"./","display":"standalone","background_color":"#EEF4EE","theme_color":"#EEF4EE","lang":"es",
+ "icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
