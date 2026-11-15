@@ -1,11 +1,11 @@
 {
-  "name": "Diego Midnight Soft · Pruebas",
-  "short_name": "Diego Soft",
+  "name": "Diego Pastel Pastel 3D · Pruebas",
+  "short_name": "Diego Pastel",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0B1122",
-  "theme_color": "#0B1122",
+  "background_color": "#FFF4E8",
+  "theme_color": "#FFF4E8",
   "lang": "es",
   "icons": [
     {
@@ -20,6 +20,6 @@
       "purpose": "any maskable"
     }
   ],
-  "id": "./diego-midnight-soft-test",
-  "description": "Versión de pruebas del diseño Midnight Soft Glass para Pauta Diabetes Diego."
+  "id": "./diego-soft-pastel-3d-test",
+  "description": "Versión de pruebas del diseño Soft Pastel 3D para Pauta Diabetes Diego."
 }
