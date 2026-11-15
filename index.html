@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Diego · Midnight Soft</title>
+<title>Diego · Midnight Soft Glass V2</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Diego Soft">
@@ -650,6 +650,121 @@ body{
 }
 @media(min-width:700px){.mast2{border-radius:26px}}
 @media(prefers-reduced-motion:reduce){.nextbar.soon{animation:none}}
+
+
+/* ===== MIDNIGHT SOFT GLASS V2: pearl + midnight, deliberate visual redesign ===== */
+:root[data-mode="dark"]{
+  color-scheme:light;
+  --bg:#E6E7F6; --bg2:#DDE0F2; --surface:#F3F3FF; --elev:#E7E8FA;
+  --text:#232743; --text2:#545D7A; --muted:#68718F;
+  --accent:#B8FF3B;--accent-text:#385A11;--accent2:#0D9488;
+  --border:rgba(107,111,171,.16); --border2:rgba(109,113,176,.30);
+  --accent-bg:#E8F9CE;--on-accent:#182216;
+  --shadow:15px 18px 38px rgba(87,88,144,.14),-9px -9px 25px rgba(255,255,255,.83),inset 0 1px 0 rgba(255,255,255,.95);
+  --soft-inner:inset 3px 4px 8px rgba(121,124,182,.13),inset -3px -3px 8px rgba(255,255,255,.95);
+  --glass-light:rgba(255,255,255,.75);--glass-highlight:#fff;
+  --glow:0 7px 18px rgba(126,189,27,.16),inset 0 1px 0 rgba(255,255,255,.74);
+}
+html[data-mode="dark"] body{
+  background:radial-gradient(ellipse 96% 44% at 12% 25%,#F7F6FF 0,transparent 72%),
+  radial-gradient(ellipse 78% 42% at 110% 70%,#CECFF0 0,transparent 75%),
+  linear-gradient(175deg,#E6E7F6,#E9EBFA 46%,#DEE1F3);
+  background-attachment:fixed;
+}
+/* midnight sport banner intentionally remains dark */
+html[data-mode="dark"] .mast2{
+ background:radial-gradient(ellipse 70% 85% at 90% 14%,rgba(35,213,199,.17),transparent 69%),
+ linear-gradient(140deg,#111831 0%,#1B254C 60%,#263264 100%);
+ border:1px solid rgba(240,245,255,.16);border-radius:27px;
+ margin:0 0 16px;padding:17px 14px 13px;
+ box-shadow:0 18px 32px rgba(35,39,86,.23),inset 0 1px rgba(255,255,255,.15);
+ color:#FAFBFF;
+}
+html[data-mode="dark"] .mast2 .hi,html[data-mode="dark"] .mast2 .mast-row{color:#FFFFFF}
+html[data-mode="dark"] .mast2 .hi2{color:#65E8D4}
+html[data-mode="dark"] .mast2 .ava{
+ background:linear-gradient(140deg,#283767,#17213F);color:#C8FF62;
+ border:2px solid #BAFF44;box-shadow:0 0 0 5px rgba(184,255,59,.09),0 10px 26px #090F2F7A;
+}
+html[data-mode="dark"] .mast2 .mast-art{opacity:.85;filter:drop-shadow(0 0 20px #2EEAC36B)}
+html[data-mode="dark"] .mast2 .nextbar{
+ background:rgba(14,25,51,.64);border:1px solid rgba(184,255,59,.66);
+ color:#FFFFFF;box-shadow:inset 0 1px rgba(255,255,255,.12),0 7px 20px #03091F50;
+ border-radius:999px;
+}
+html[data-mode="dark"] .mast2 .nextbar .cd{color:#C5FF5E}
+html[data-mode="dark"] .mast2 .nextbar.soon{background:#B8FF3B;color:#172217}
+html[data-mode="dark"] .mast2 .nextbar.soon .cd{color:#172217}
+/* large pearlescent tactile controls */
+html[data-mode="dark"] .card,
+html[data-mode="dark"] .plateh2,
+html[data-mode="dark"] .plist,
+html[data-mode="dark"] .sc,
+html[data-mode="dark"] .savebar{
+ background:linear-gradient(140deg,rgba(255,255,255,.86) 0%,rgba(248,247,255,.43) 46%,rgba(215,217,247,.60) 100%),#EFF0FC;
+ border:1px solid rgba(255,255,255,.89);
+ box-shadow:12px 14px 30px rgba(98,101,168,.17),-7px -7px 20px rgba(255,255,255,.88),inset 0 1px 0 #fff;
+ border-radius:27px;
+ color:#222742;
+}
+html[data-mode="dark"] .card.elev{background:linear-gradient(145deg,#F4F4FF,#E3E6F8)}
+html[data-mode="dark"] .plateh2{
+ background:radial-gradient(circle at 98% 92%,rgba(56,225,198,.16),transparent 58%),linear-gradient(145deg,#FCFBFF,#E0E3F6);
+ padding:16px;border-radius:30px;
+}
+html[data-mode="dark"] .plateh2 .ph-total{color:#375F0E;text-shadow:none}
+html[data-mode="dark"] .ph-ref .diff{background:#E3E8F2!important;color:#2B3450!important;border-color:#F8F9FF!important}
+html[data-mode="dark"] .hcpill{color:#3E650F;background:#E5F5D3;border:1px solid #D8ECC8}
+html[data-mode="dark"] .mgrid{gap:8px}
+html[data-mode="dark"] .mgrid .chip,
+html[data-mode="dark"] .chips .chip,
+html[data-mode="dark"] .quick button,
+html[data-mode="dark"] .hbtn,
+html[data-mode="dark"] .btn-secondary{
+ background:linear-gradient(145deg,#F9F9FF,#DBDEF3);border:1px solid rgba(255,255,255,.9);
+ color:#303854;
+ box-shadow:5px 7px 15px rgba(104,109,166,.17),-4px -4px 12px #FFFFFFCC;
+ border-radius:19px;
+}
+html[data-mode="dark"] .mgrid .chip[aria-pressed=true],
+html[data-mode="dark"] .chips .chip[aria-pressed=true],
+html[data-mode="dark"] .btn-primary,
+html[data-mode="dark"] .plateh2 .btn.go{
+ background:linear-gradient(150deg,#E2FF9F,#B8FF3B 75%);color:#182415;
+ border:1px solid rgba(241,255,215,.94);
+ box-shadow:0 10px 19px rgba(110,161,26,.19),inset 0 2px 0 rgba(255,255,255,.7);
+}
+html[data-mode="dark"] .plist .thumb{background:linear-gradient(150deg,#FFF,#E2E6F9);border:1px solid #FFF;box-shadow:4px 5px 11px #7C86AF33}
+html[data-mode="dark"] .savebar{color:#28304A}
+html[data-mode="dark"] .savebar .ico:first-child{color:#55841E}
+html[data-mode="dark"] .in,html[data-mode="dark"] .inp input,
+html[data-mode="dark"] select.in,html[data-mode="dark"] textarea.in{
+ background:linear-gradient(150deg,#E4E7F6,#F7F7FF);color:#242B47;border:1px solid #C9CBE4;
+ box-shadow:inset 3px 3px 6px #AEB3D066,inset -3px -3px 7px #FFFFFFEE;
+}
+html[data-mode="dark"] .search{background:linear-gradient(#E6E7F6F2,#E6E7F6F2)}
+html[data-mode="dark"] .nav .in{
+ background:rgba(244,244,255,.9);border:1px solid rgba(255,255,255,.94);
+ box-shadow:0 -6px 28px #8D91B340,inset 0 1px #FFFFFF;
+ -webkit-backdrop-filter:blur(25px) saturate(1.2);backdrop-filter:blur(25px) saturate(1.2);
+ border-radius:25px 25px 0 0;
+}
+html[data-mode="dark"] .nav button{color:#737B9E}
+html[data-mode="dark"] .nav button[aria-current=page]{color:#36571C}
+html[data-mode="dark"] .nav button[aria-current=page]::after{background:#A9E847;box-shadow:0 0 12px #A9E84766}
+/* medical values retain a solid, legible surface */
+html[data-mode="dark"] #s-pauta .card,html[data-mode="dark"] .dosebox,
+html[data-mode="dark"] .note{background:#F7F7FF;color:#222742;box-shadow:0 6px 18px #6F74A32B}
+html[data-mode="dark"] .note.danger{border:2px solid #CF4545}
+html[data-mode="dark"] .note.warn{border:2px solid #C48425}
+html[data-mode="dark"] .note.info{border:2px solid #318DAB}
+html[data-mode="dark"] .kicker,html[data-mode="dark"] .lk{color:#446C15}
+html[data-mode="dark"] .sheet{background:linear-gradient(155deg,#F7F6FF,#E3E4F6);color:#222742}
+html[data-mode="dark"] .sheet .in{background:#F7F7FF}
+html[data-mode="dark"] .scrim.on{background:rgba(8,11,34,.67)}
+@media(max-width:380px){html[data-mode="dark"] .mast2{padding:12px 11px 10px}}
+/* Respect reduced motion and clarity */
+@media(prefers-reduced-motion:reduce){html[data-mode="dark"] *{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 </style>
 </head>
