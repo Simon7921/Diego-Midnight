@@ -430,7 +430,7 @@ html.fig-ball .mast-art .fig-bike{display:none}
 :root[data-mode=light] .card,:root[data-mode=light] .plateh2,:root[data-mode=light] .set,:root[data-mode=light] .nav .in{box-shadow:var(--shadow)}
 :root[data-mode=light] .mast2{background:linear-gradient(180deg,rgba(201,233,221,.76),rgba(255,247,238,.2));border-radius:0 0 28px 28px;margin-bottom:8px;padding-bottom:10px}
 :root[data-mode=light] .mast2 .mast-art{right:-18px;top:-6px;height:170px;opacity:.14;filter:saturate(.8)}
-.mast-player{display:none;position:absolute;right:-13px;top:-2px;height:180px;width:auto;z-index:1;pointer-events:none;filter:drop-shadow(0 14px 14px rgba(87,72,61,.18))}
+.mast-player{display:block;position:absolute;right:-13px;top:-2px;height:180px;width:auto;z-index:1;pointer-events:none;filter:drop-shadow(0 14px 14px rgba(87,72,61,.18))}
 html.fig-ball .mast-player{display:block}
 :root[data-mode=light] .mast-player{filter:drop-shadow(0 16px 18px rgba(87,72,61,.18))}
 .mast2 .mast-row,.nextbar,.q1,.mgrid,.plateh2{position:relative;z-index:2}
@@ -446,6 +446,159 @@ html.fig-ball .mast-player{display:block}
 :root[data-mode=light] .nav .in{background:rgba(255,250,243,.78);border-color:rgba(125,106,92,.16)}
 :root[data-mode=light] .search .inp input::placeholder{color:#b19f92}
 
+
+/* ============================================================
+   DIEGO SOFT PASTEL 3D · REDISEÑO ESTRUCTURAL V4
+   UI ONLY. Sin cambios en calc.js, store.js ni app.js.
+   ============================================================ */
+:root[data-mode="dark"],:root[data-mode="light"]{
+ color-scheme:light;
+ --bg:#F7EFE4;--bg2:#FDF7EE;--surface:#FFFAF3;--elev:#FFFDF9;
+ --accent:#D5FA68;--accent-soft:#E8FFAF;--accent2:#289F8D;--on-accent:#243B27;--accent-text:#327B60;
+ --text:#3D302B;--text2:#655951;--muted:#776C63;
+ --success:#247A52;--warning:#A86519;--danger:#BF4148;--info:#20678E;
+ --warning-bg:#FFF2DA;--danger-bg:#FDEBEA;--info-bg:#EAF6FE;--accent-bg:#ECF8D4;
+ --border:rgba(136,113,90,.16);--border2:rgba(136,113,90,.23);
+ --shadow:0 11px 22px rgba(121,91,71,.11),0 2px 0 rgba(255,255,255,.85) inset;
+ --glow:0 8px 18px rgba(138,177,58,.17),inset 0 2px rgba(255,255,255,.72);
+ --r-card:24px;--r-btn:18px
+}
+html[data-mode] body{background:radial-gradient(circle at 0 2%,#DDF1E6 0,transparent 39%),radial-gradient(circle at 100% 75%,#F6DFD1 0,transparent 38%),#F7EFE4;background-attachment:fixed}
+html[data-mode] .wrap{max-width:640px;padding:calc(env(safe-area-inset-top) + 14px) 15px calc(110px + env(safe-area-inset-bottom))}
+html[data-mode] .card{border-radius:24px;background:#FFFAF3;border:1px solid rgba(255,255,255,.95);box-shadow:0 12px 25px rgba(121,91,71,.12),inset 0 2px #fff}
+html[data-mode] .btn-primary{background:linear-gradient(180deg,#EBFF92,#C2F057);border:1px solid #EDFFBE;color:#273820;box-shadow:0 8px 18px #A7CE6840,inset 0 2px #fff9}
+html[data-mode] .btn-secondary,html[data-mode] .btn-ghost{background:linear-gradient(160deg,#fffdf8,#f8eddf);border:1px solid #fff;color:#46695b;box-shadow:0 6px 14px #B59A7D27,inset 0 1px #fff}
+html[data-mode] .h1{font-size:27px;letter-spacing:-.035em;color:#3F332C}
+html[data-mode] .hello{color:#7A675D;font-size:13px}
+html[data-mode] .eyebrow{font-weight:850;color:#298A75;font-size:10px;letter-spacing:.17em;margin-bottom:7px}
+html[data-mode] .top{margin:12px 2px 16px;align-items:flex-start}
+html[data-mode] .avatar{background:#FCF5E9;color:#397D70;border:1px solid #fff;box-shadow:0 6px 12px #BDA88D44}
+/* Real illustration-led hero: no old SVG silhouette visible */
+html[data-mode] #s-inicio .mast2{position:relative;isolation:isolate;min-height:220px;overflow:hidden;margin:0 -3px 0;padding:17px 18px 10px;border-radius:30px;background:linear-gradient(130deg,#DDF4E9 0%,#BDE9D9 57%,#A5DDCA 100%);border:2px solid rgba(255,255,255,.9);box-shadow:0 16px 26px #8CB8A245,inset 0 2px #fff}
+html[data-mode] .hero-brand{position:relative;z-index:4;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:900;letter-spacing:-.04em;color:#316757}
+.hero-brand small{font-size:9px;letter-spacing:.15em;color:#548878;margin-left:4px}
+.brand-mark{display:grid;place-items:center;width:33px;height:33px;border-radius:12px;background:linear-gradient(155deg,#2D9D87,#18685E);color:#DFFC7A;font-style:italic;font-size:24px;box-shadow:0 7px 15px #418E7950,inset 0 2px #ffffff77}
+.brand-dot{color:#86BA29}
+html[data-mode] #s-inicio .mast2 .mast-art{display:none!important}
+html[data-mode] #s-inicio .mast2 .mast-player{position:absolute;right:-12px;top:2px;height:229px;width:auto;max-width:none;z-index:1;object-fit:contain;filter:drop-shadow(0 14px 14px #3D877B48)}
+html[data-mode] #s-inicio .mast2::after{content:"";position:absolute;right:-34px;bottom:-85px;width:245px;height:190px;border-radius:50%;background:rgba(255,255,255,.25);z-index:0}
+html[data-mode] #s-inicio .mast2 .mast-row{margin-top:30px;position:relative;z-index:3;align-items:flex-start;max-width:57%}
+html[data-mode] #s-inicio .mast2 .ava{display:none}
+html[data-mode] #s-inicio .mast2 .mast-row>div{padding:0!important}
+html[data-mode] #s-inicio .mast2 .hi{white-space:normal;font-size:clamp(27px,7.5vw,33px);line-height:1.05;color:#2C4B41;text-shadow:none;letter-spacing:-.05em}
+html[data-mode] #s-inicio .mast2 .hi2{font-size:16px;color:#1A8C77;font-style:normal;font-weight:800;margin-top:8px;line-height:1.2}
+html[data-mode] .nextbar-shell{margin:10px 0 17px}
+html[data-mode] .nextbar{width:100%;min-height:44px;margin:0;background:#FFFBF3!important;border:1px solid #fff!important;box-shadow:0 7px 15px #A68E742A!important;color:#534C43!important;border-radius:16px}
+html[data-mode] .nextbar .ico,html[data-mode] .nextbar .cd{color:#278975!important}
+html[data-mode] .section-intro{display:flex;justify-content:space-between;align-items:center;margin:0 3px 10px}
+html[data-mode] .section-intro .q1{margin:0!important;color:#40372F;font-size:23px!important;line-height:1.15}
+html[data-mode] .intro-spark{font-size:26px;color:#EAB96F}
+html[data-mode] .mgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-bottom:18px}
+html[data-mode] .mgrid .chip{min-height:66px;display:flex;flex-direction:column;gap:5px;border:1px solid #fff;border-radius:18px;background:linear-gradient(150deg,#fffdfa,#f4e8db);box-shadow:0 6px 12px #BAA08835;color:#65564B;font-size:clamp(10px,2.8vw,13px);padding:5px 1px}
+html[data-mode] .mgrid .chip .ico{width:23px;height:23px;color:#378C79}
+html[data-mode] .mgrid .chip[aria-pressed=true]{background:linear-gradient(160deg,#DFFF83,#B9EF5A);color:#28422E;box-shadow:0 7px 17px #A6CD6145,inset 0 2px #fff9}
+html[data-mode] .mgrid .chip[aria-pressed=true] .ico{color:#28422E}
+/* Food hero deliberately larger, with clear primary call to action */
+html[data-mode] .plateh2{border-radius:28px;padding:20px 18px;background:linear-gradient(135deg,#DDF4EA,#BDE9DC 82%)!important;border:2px solid #fff!important;box-shadow:0 14px 25px #83BBA85C,inset 0 2px #fff}
+html[data-mode] .plateh2 .ph-title{font-size:17px;color:#3D6657}
+html[data-mode] .plateh2 .bowl{width:44px}
+html[data-mode] .plateh2 .ph-total{font-size:clamp(36px,10vw,50px);color:#216A58!important;font-weight:900;letter-spacing:-.055em}
+html[data-mode] .plateh2 .ph-row{margin:6px 0 14px;gap:8px}
+html[data-mode] .plateh2 .btn.go{border-radius:20px;min-height:50px;padding:0 14px}
+html[data-mode] .plateh2 .ph-ref{font-size:13px;border-top:1px solid #6DAB9160}
+html[data-mode] .plateh2 .ph-ref .diff{border-radius:999px;background:#F7FFF1!important;color:#436754!important;border-color:#fff!important}
+html[data-mode] .sect2{margin-top:22px;margin-bottom:10px}
+html[data-mode] .sect2 h2{font-size:22px;color:#43372F}
+html[data-mode] .sect2 .lbar{background:#83BD71}
+html[data-mode] .hbtn{background:#FFFAF3;border:1px solid #fff;box-shadow:0 5px 13px #B89E8540;border-radius:16px}
+html[data-mode] .plist{padding:6px 14px}
+html[data-mode] .plist .li{padding:8px 0}
+html[data-mode] .plist .main{min-height:59px}
+html[data-mode] .plist .thumb{border:1px solid #fff;border-radius:16px;background:#F9F0E5;box-shadow:0 4px 10px #B5A18930}
+html[data-mode] .plist .nm2{font-size:15px;color:#43392F}
+html[data-mode] .plist .hcpill{background:#E1F4B8;color:#386735;border:1px solid #E9FFC3;border-radius:15px}
+html[data-mode] .savebar{margin-top:13px;background:#FFF9EF;border:1px solid #fff;color:#44695C;border-radius:20px;box-shadow:0 9px 17px #B3987D30}
+/* Foods: mini modular header and warm raised chips + separated rows */
+html[data-mode] .food-intro{display:flex;align-items:center;gap:16px;min-height:102px;padding:14px 18px;margin-bottom:16px;border:2px solid #fff;border-radius:25px;background:linear-gradient(120deg,#FFE4D1,#F7F1D9 75%);box-shadow:0 10px 20px #D1B1983B}
+.food-illus{white-space:nowrap;font-size:34px;letter-spacing:-6px;text-shadow:0 6px 8px #BA91745E;flex:none}
+.food-illus span{position:relative;top:9px;font-size:27px}
+.food-intro b,.food-intro small{display:block}
+.food-intro b{font-size:20px;color:#70513C;line-height:1.1}
+.food-intro small{font-size:12px;color:#826D60;margin-top:5px}
+html[data-mode] .search{margin:0 0 14px}
+html[data-mode] .search .inp{border-radius:17px}
+html[data-mode] .chips{gap:8px;margin:0 0 8px;padding:5px 2px 13px}
+html[data-mode] .chips .chip{background:#FFFAF2;border:1px solid #fff;border-radius:16px;box-shadow:0 6px 13px #B59B7F33;color:#685C4F;font-size:13px}
+html[data-mode] .chips .chip[aria-pressed=true]{background:linear-gradient(180deg,#DCFA90,#C0ED70);color:#2F4C29}
+html[data-mode] .food-list-head{display:flex;align-items:center;justify-content:space-between;margin:6px 4px 9px;color:#4B3E34}
+.food-list-head strong{font-size:18px}.food-list-head span{font-size:11px;color:#8E7868}
+html[data-mode] .food-panel{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
+html[data-mode] .food-panel .li{border:1px solid #fff;background:#FFFAF2;border-radius:19px;padding:9px 10px;margin:0 0 9px;box-shadow:0 7px 13px #B99E8330}
+html[data-mode] .food-panel .li .thumb{border-radius:14px;background:#FFF2E4;display:grid;place-items:center;box-shadow:inset 0 2px #fff}
+html[data-mode] .food-panel .li .nm{color:#4B3D35;white-space:normal;line-height:1.3;font-size:14px}
+html[data-mode] .food-panel .li .mt{font-size:11px;color:#807468;max-height:2.7em;overflow:hidden}
+html[data-mode] .ibtn.add{border-radius:13px;background:#D9F98D;color:#305932;box-shadow:0 5px 9px #A7C36A50}
+/* Recipes: actual content cards inside illustrated recipe section */
+html[data-mode] .recipe-intro{display:flex;position:relative;align-items:center;justify-content:space-between;overflow:hidden;min-height:146px;background:linear-gradient(125deg,#FFE4D3,#F6F0DF);border:2px solid #fff;border-radius:27px;padding:22px;margin:0 0 22px;box-shadow:0 11px 20px #D8B69A40}
+.recipe-intro-copy{position:relative;z-index:1;max-width:66%}
+.recipe-intro-copy span{font-size:10px;font-weight:850;letter-spacing:.09em;color:#AF7350;display:block;margin-bottom:8px}
+.recipe-intro-copy strong{display:block;font-size:24px;line-height:1.1;color:#674632}
+.recipe-intro-copy small{display:block;font-size:12px;color:#8E6C58;margin-top:8px}
+.recipe-visual{position:absolute;right:10px;top:9px;font-size:94px;filter:drop-shadow(0 13px 8px #B79A8059)}
+.recipe-list-title{font-size:19px;font-weight:850;color:#4C3D33;margin:0 4px 12px}
+html[data-mode] .recipe-cards>.card{border-radius:25px;min-height:143px;margin-bottom:14px!important;background:linear-gradient(160deg,#fffdf9,#fff5e9);padding:18px;box-shadow:0 11px 20px #B59B8230}
+html[data-mode] .recipe-cards .tag{background:#DDF4D0;color:#3B7A59;border-radius:12px}
+/* Pauta: clinical reading, simple and high contrast */
+html[data-mode] .pauta-intro{display:flex;align-items:center;gap:14px;border:2px solid #fff;background:linear-gradient(125deg,#E5F2F8,#DEF1EA);border-radius:23px;padding:17px;margin:0 0 18px;box-shadow:0 10px 19px #89B1A435}
+.pauta-intro-icon{font-size:31px;background:#fff9;border-radius:15px;padding:8px}
+.pauta-intro strong{display:block;color:#345E58;font-size:18px}
+.pauta-intro small{display:block;color:#5B7772;font-size:12px;line-height:1.5;margin-top:4px}
+html[data-mode] #s-pauta .card{background:#FFFCF8!important;border:1px solid #D6C8B8!important;box-shadow:0 8px 17px #B6A18B21!important}
+html[data-mode] #s-pauta .dosebox{background:#F6F1E9!important;box-shadow:none!important;border:1px solid #CDBDAB!important}
+html[data-mode] #s-pauta .dosebox .dv{color:#355F56;text-shadow:none}
+html[data-mode] #s-pauta .dosebox .dv.stop{color:#BE333A}
+/* real bottom nav with a white floating bar */
+html[data-mode] .nav{padding:0 11px calc(9px + env(safe-area-inset-bottom))}
+html[data-mode] .nav .in{background:#FFF8F0;border:2px solid #fff;box-shadow:0 0 0 1px #E2D9CC,0 14px 24px #90785F32;border-radius:25px;padding:6px}
+html[data-mode] .nav button{color:#7D726A;border-radius:18px;font-size:11px}
+html[data-mode] .nav button[aria-current=page]{background:linear-gradient(160deg,#E5FD92,#C8F174);color:#355E3C;box-shadow:0 6px 11px #AAC56A40}
+/* Form focus and contrast */
+html[data-mode] .in,html[data-mode] .inp input,html[data-mode] select.in,html[data-mode] textarea.in{background:#FFFDF8;border:1.5px solid #CDBDAB;color:#3B332D;box-shadow:inset 0 2px 5px #C2A38820}
+html[data-mode] .sheet{background:#FFF6EA;color:#3D332B}
+html[data-mode] .note.danger{background:#FFF0EE!important;border:2px solid #C64B54!important;color:#663136!important}
+html[data-mode] .note.warn{background:#FFF1DD!important;border:2px solid #B87A26!important;color:#6B4A2B!important}
+html[data-mode] .toast{background:#FFFCF5;color:#43362F}
+@media (min-width:600px){html[data-mode] #s-inicio .mast2{min-height:255px}html[data-mode] #s-inicio .mast2 .mast-player{height:270px;right:6px}html[data-mode] #s-inicio .mast2 .mast-row{margin-top:40px}}
+@media (max-width:360px){html[data-mode] #s-inicio .mast2{min-height:202px}html[data-mode] #s-inicio .mast2 .mast-player{height:205px;right:-25px}html[data-mode] #s-inicio .mast2 .hi{font-size:25px}html[data-mode] .food-illus{font-size:28px}html[data-mode] .recipe-visual{font-size:75px}}
+
+
+/* V5: NEW COMPONENT LAYOUT - source-independent visual signature */
+:root[data-mode="dark"],:root[data-mode="light"]{--bg:#F5F0E8;--bg2:#FFF8EE;--surface:#FFF9EF;--elev:#FFFDF8;--text:#3A3129;--text2:#746559;--accent:#C9F762;--accent-text:#356F50;--border:#EADFD3;--border2:#DCCBBB}
+html[data-mode] body{background:linear-gradient(145deg,#E6F4EB 0%,#FFF8ED 48%,#FFECE1 100%);background-attachment:fixed}
+html[data-mode] .wrap{padding-top:12px;}
+html[data-mode] #s-inicio .mast2{min-height:250px;background:linear-gradient(140deg,#E9FAF1 0%,#B6E8D5 100%)!important;border:3px solid #fff!important;border-radius:32px!important;box-shadow:0 14px 28px #92BDA74D, inset 0 2px #fff!important;}
+html[data-mode] #s-inicio .mast2 .mast-player{display:block!important;top:5px!important;right:-18px!important;height:256px!important;opacity:1!important;filter:drop-shadow(0 12px 12px rgba(46,107,87,.2))!important;}
+html[data-mode] #s-inicio .mast2 .mast-row{margin-top:36px!important;max-width:57%!important;}
+html[data-mode] #s-inicio .mast2 .hi{font-size:clamp(30px,8.2vw,37px)!important;color:#245346!important;line-height:1.04!important;white-space:normal!important;}
+html[data-mode] #s-inicio .mast2 .hi2{font-size:16px!important;color:#268878!important}
+html[data-mode] .hero-brand small{background:#FFFDF8;color:#427865;padding:5px 8px;border-radius:50px;letter-spacing:.06em;font-size:9px;box-shadow:0 2px 6px #79B59F33}
+html[data-mode] .section-intro{margin-top:10px}
+html[data-mode] .mgrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+html[data-mode] .mgrid .chip{min-height:72px;border-radius:22px;box-shadow:0 10px 16px #BDA58E25,inset 0 2px #fff;padding:6px 1px;font-size:11.5px}
+html[data-mode] .mgrid .chip[aria-pressed=true]{background:linear-gradient(#DFFF94,#BBED66)}
+html[data-mode] .mgrid .chip .ico{width:24px;height:24px}
+html[data-mode] #s-inicio .plateh2{position:relative;min-height:172px;background:linear-gradient(120deg,#D6F4E8 0%,#AEE5D4 100%)!important;border-radius:29px!important;padding:22px 18px!important;box-shadow:0 15px 22px #7EAB9844!important}
+html[data-mode] #s-inicio .plateh2 .ph-total{font-size:clamp(40px,11vw,54px)!important;color:#226C58!important}
+html[data-mode] #s-inicio .plateh2 .ph-title{color:#286652!important}
+html[data-mode] #s-inicio .plateh2 .btn.go{border-radius:22px!important}
+html[data-mode] .pastel-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 8px}
+html[data-mode] .pastel-shortcut{min-height:82px;border-radius:22px;border:2px solid #fff;background:linear-gradient(150deg,#FFFDF9,#F8ECDE);box-shadow:0 10px 18px #A88E792F,inset 0 2px #fff;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;color:#55695C;font-weight:750;font-size:12px}
+html[data-mode] .pastel-shortcut .sc-symbol{display:grid;place-items:center;width:35px;height:35px;border-radius:13px;background:#E2F4E8;color:#2C9981;font-size:25px;font-weight:600;box-shadow:inset 0 2px #fff,0 4px 7px #739E8B22}
+html[data-mode] .pastel-shortcut:nth-child(2) .sc-symbol{background:#FFEAD8;color:#D58B5F}
+html[data-mode] .pastel-shortcut:nth-child(3) .sc-symbol{background:#E4E6FA;color:#7375BE}
+html[data-mode] .nav .in{background:rgba(255,249,241,.97)!important}
+@media(max-width:360px){html[data-mode] #s-inicio .mast2 .mast-player{height:218px!important;right:-30px!important}html[data-mode] #s-inicio .mast2{min-height:219px}html[data-mode] #s-inicio .mast2 .hi{font-size:27px!important}}
+
 </style>
 </head>
 <body>
@@ -453,8 +606,9 @@ html.fig-ball .mast-player{display:block}
   <div id="boot"><div class="sk" style="height:48px;width:60%"></div><div class="sk" style="height:180px"></div><div class="sk"></div><div class="sk"></div></div>
 
   <!-- 1. INICIO / MI COMIDA -->
-  <section class="screen" id="s-inicio" hidden aria-labelledby="hiT">
-    <header class="mast2">
+  <section class="screen pastel-home" id="s-inicio" hidden aria-labelledby="hiT">
+    <header class="mast2 pastel-mast">
+      <div class="hero-brand"><span class="brand-mark">D</span><span>diego<span class="brand-dot">.</span> <small>PASTEL 3D · V5</small></span></div>
       <svg class="mast-art" viewBox="0 0 240 220" preserveAspectRatio="xMaxYMin meet" aria-hidden="true" focusable="false">
         <defs>
           <linearGradient id="gSw1" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#B8FF3B" stop-opacity="0"/><stop offset=".5" stop-color="#B8FF3B" stop-opacity=".95"/><stop offset="1" stop-color="#38E1C6" stop-opacity=".1"/></linearGradient>
@@ -543,11 +697,11 @@ html.fig-ball .mast-player{display:block}
         <button class="ava" data-go="perfil" aria-label="Perfil y configuración"><svg class="ico"><use href="#i-user"/></svg></button>
         <div><h1 class="hi" id="hiT">¡Hola, Diego!</h1><div class="hi2" id="hello">¡Vamos, Diego! ⚡</div></div>
       </div>
-      <button class="nextbar" id="nextPill" aria-label="Ver horarios"></button>
     </header>
-    <p class="q1">¿Qué comeremos hoy?</p>
+    <div class="nextbar-shell"><button class="nextbar" id="nextPill" aria-label="Ver horarios"></button></div>
+    <div class="section-intro"><p class="q1">¿Qué comeremos hoy?</p><span class="intro-spark" aria-hidden="true">✦</span></div>
     <div class="mgrid" id="meals" role="group" aria-label="Comida"></div>
-    <div class="card plateh2">
+    <div class="card plateh2 pastel-plate">
       <div class="ph-title"><svg class="bowl" viewBox="0 0 140 120" aria-hidden="true" focusable="false">
             <defs><radialGradient id="gBowl" cx=".5" cy=".3" r=".8"><stop offset="0" stop-color="#2A3650"/><stop offset="1" stop-color="#121A2B"/></radialGradient>
             <linearGradient id="gChk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2C27A"/><stop offset="1" stop-color="#C47A2C"/></linearGradient></defs>
@@ -565,6 +719,11 @@ html.fig-ball .mast-player{display:block}
       <div class="ph-row"><div class="ph-total" id="total" aria-live="polite">0 g HC</div><button class="btn btn-primary go" data-go="alimentos" id="addFood"></button></div>
       <div class="ph-ref" id="phRef"><span class="t2">Pauta de referencia: <b id="refHC">60 g HC</b></span><span class="diff" id="diff" hidden></span></div>
     </div>
+    <div class="pastel-shortcuts" aria-label="Accesos directos">
+      <button data-go="favoritos" class="pastel-shortcut"><span class="sc-symbol">♡</span><span>Favoritos</span></button>
+      <button data-go="recetas" class="pastel-shortcut"><span class="sc-symbol">♨</span><span>Recetas</span></button>
+      <button data-go="historial" class="pastel-shortcut"><span class="sc-symbol">▥</span><span>Historial</span></button>
+    </div>
     <div class="sect2"><span class="lbar"></span><h2>Mi plato</h2><span class="cnt" id="plateCount"></span><span class="sp"></span><button class="hbtn ic" id="favBtn" data-go="favoritos" aria-label="Mis comidas guardadas"><svg class="ico"><use href="#i-heart"/></svg></button><button class="hbtn ic" id="moreBtn" aria-label="Más opciones del plato"><svg class="ico"><use href="#i-more"/></svg></button></div>
     <div class="card plist"><ul class="list" id="plate"></ul></div>
     <button class="savebar" id="saveFav"><svg class="ico"><use href="#i-bookmark"/></svg><span>Guardar esta comida</span><svg class="ico s"><use href="#i-chev"/></svg></button>
@@ -572,18 +731,21 @@ html.fig-ball .mast-player{display:block}
 
   <!-- 2. EXPLORADOR DE ALIMENTOS -->
   <section class="screen" id="s-alimentos" hidden>
-    <header class="top"><div><h1 class="h1">¿Qué se te antoja?</h1><div class="hello" id="addingTo"></div></div><button class="avatar" data-go="perfil" aria-label="Perfil y configuración">D</button></header>
+    <header class="top pastel-pagehead"><div><div class="eyebrow">EXPLORA · COMBINA · DISFRUTA</div><h1 class="h1">Alimentos <span aria-hidden="true">🍎</span></h1><div class="hello" id="addingTo"></div></div><button class="avatar" data-go="perfil" aria-label="Perfil y configuración">D</button></header>
+    <div class="food-intro" aria-hidden="true"><div class="food-illus">🥐 <span>🍎</span> 🥛</div><div><b>¡Arma algo rico!</b><small>Tus alimentos, todos a mano</small></div></div>
     <div class="search"><div class="inp"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg><input id="q" type="search" placeholder="Busca lo que vas a comer" autocomplete="off" aria-label="Buscar alimento"></div></div>
     <div class="chips" id="cats" role="group" aria-label="Filtros"></div>
-    <div class="card" style="padding-top:4px;padding-bottom:4px"><ul class="list" id="foods"></ul></div>
+    <div class="food-list-head"><strong>Busca y agrega</strong><span>Porciones ajustables</span></div>
+    <div class="card food-panel" style="padding-top:4px;padding-bottom:4px"><ul class="list" id="foods"></ul></div>
     <button class="btn btn-ghost" id="newFood" style="margin-top:12px"></button>
     <p class="muted small" style="margin:10px 4px">Valores por 100 g o 100 ml, con su fuente. Tip: la fruta se pesa sin cáscara ni pepas, y "cocido" o "crudo" te dice cómo pesarlo.</p>
   </section>
 
   <!-- 3. CONSTRUCTOR DE RECETAS -->
   <section class="screen" id="s-recetas" hidden>
-    <header class="top"><div><h1 class="h1">Recetas</h1><div class="hello">Lo rico de la casa, bien calculado</div></div><button class="avatar" data-go="perfil" aria-label="Perfil y configuración">D</button></header>
-    <div id="recipes"></div>
+    <header class="top pastel-pagehead"><div><div class="eyebrow">EL RECETARIO DE DIEGO</div><h1 class="h1">Mis recetas <span aria-hidden="true">👨‍🍳</span></h1><div class="hello">Lo rico de casa, con tus cantidades</div></div><button class="avatar" data-go="perfil" aria-label="Perfil y configuración">D</button></header>
+    <div class="recipe-intro"><div class="recipe-intro-copy"><span>COCINAMOS A TU MANERA</span><strong>¡A crear algo rico!</strong><small>Guarda tus preparaciones y ajusta la porción.</small></div><div class="recipe-visual" aria-hidden="true">🍝</div></div>
+    <div class="recipe-list-title">Tu recetario</div><div id="recipes" class="recipe-cards"></div>
     <button class="btn btn-primary" id="newRecipe" style="margin-top:12px"></button>
   </section>
 
@@ -595,7 +757,8 @@ html.fig-ball .mast-player{display:block}
 
   <!-- 5. MI PAUTA -->
   <section class="screen" id="s-pauta" hidden>
-    <header class="top"><div><h1 class="h1">Mi pauta</h1><div class="hello" id="pMeal"></div></div><button class="avatar" data-go="perfil" aria-label="Perfil y configuración">D</button></header>
+    <header class="top pastel-pagehead"><div><div class="eyebrow">TU INFORMACIÓN, BIEN CLARA</div><h1 class="h1">Mi pauta <span aria-hidden="true">📋</span></h1><div class="hello" id="pMeal"></div></div><button class="avatar" data-go="perfil" aria-label="Perfil y configuración">D</button></header>
+    <div class="pauta-intro"><span class="pauta-intro-icon" aria-hidden="true">🛡️</span><div><strong>Revisemos tu pauta</strong><small>Con calma, claridad y las indicaciones de tu equipo médico.</small></div></div>
     <div class="cols"><div>
     <div class="card calcc">
       <div class="grid2">
