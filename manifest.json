@@ -1,2 +1,25 @@
-{"name":"diego. · Pauta","short_name":"diego.","start_url":"./","scope":"./","display":"standalone","background_color":"#0B1020","theme_color":"#0B1020","lang":"es",
- "icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
+{
+  "name": "Diego Midnight Soft · Pruebas",
+  "short_name": "Diego Soft",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0B1122",
+  "theme_color": "#0B1122",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "./diego-midnight-soft-test",
+  "description": "Versión de pruebas del diseño Midnight Soft Glass para Pauta Diabetes Diego."
+}
